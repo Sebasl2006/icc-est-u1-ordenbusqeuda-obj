@@ -2,48 +2,39 @@ package models;
 
 public class Direccion {
     private String calle;
-    private String ciudad;
-    private String estado;
+    private int numero;
     private int codigo;
-
-    public Direccion(String calle, String ciudad, String estado, int codigoPostal) {
+    public Direccion(String calle, int numero, int codigo) {
         this.calle = calle;
-        this.ciudad = ciudad;
-        this.estado = estado;
-        this.codigo = codigoPostal;
+        this.numero = numero;
+        this.codigo = codigo;
     }
-
     public String getCalle() {
         return calle;
     }
-
     public void setCalle(String calle) {
         this.calle = calle;
     }
-
-    public String getCiudad() {
-        return ciudad;
+    public int getNumero() {
+        return numero;
     }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public int getCodigoPostal() {
+    public int getCodigo() {
         return codigo;
     }
-
-    public void setCodigoPostal(int codigoPostal) {
-        this.codigo = codigoPostal;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
+    @Override
+    public String toString() {
+        return "Direccion [calle=" + calle + ", numero=" + numero + ", codigo=" + codigo + "]";
+    }
+    
+    
+
+    
 
     
 }

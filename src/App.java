@@ -1,7 +1,8 @@
 import javax.swing.text.View;
+import models.Persona;
 
 import models.Direccion;
-import models.Persona;
+
 import controllers.PersonaController;
 import views.ViewsConsole;
 
@@ -22,6 +23,9 @@ public class App {
         Persona s = controller.findByCodigo(personas, 45);
         if (s!=null) System.out.println(s);
         else System.out.println("No se encontro la persona con el codigo 45");
+        System.out.println(s == null ? "No se encontro la persona con el codigo 45" : "la persona con el codigo 45 es: " + s);
+
+        
         
         
     }

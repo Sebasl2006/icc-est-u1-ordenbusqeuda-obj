@@ -1,7 +1,7 @@
 
  package models;
 
-class Persona {
+ public class Persona {
     private String nombre;
     private int edad;
     private Direccion direccion;
@@ -46,7 +46,7 @@ class Persona {
     
 
     public int getCodigoDireccion(){
-        return direccion.getCodigoPostal();
+        return direccion.getCodigo();
     }
 
 

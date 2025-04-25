@@ -5,7 +5,7 @@ import models.Direccion;
 import java.util.Arrays;
 
 public class PersonaController {
-    public Persona sortByDireccionCodigo(Persona[] personas) {
+    public void sortByDireccionCodigo(Persona[] personas) {
         for (int i = 0; i < personas.length - 1; i++) {
             int indexMayor = i + 1;
             for (int j = i + 1; j < personas.length; j++) {
